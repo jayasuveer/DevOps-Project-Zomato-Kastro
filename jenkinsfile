@@ -69,7 +69,7 @@ pipeline {
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){
                        sh 'docker scout quickview suveer3233/zomato:latest'
-                       sh 'docker-scout cves suveer3233/zomato:latest'
+                       sh 'docker scout cves suveer3233/zomato:latest'
                        sh 'docker-scout recommendations suveer3233/zomato:latest'
                    }
                 }
